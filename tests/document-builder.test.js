@@ -15,7 +15,7 @@ describe("document-builder tests", () => {
     const template = Handlebars.compile(templateFileContent);
     expect(template).toBeTruthy();
 
-    const htmlDoc = template({ name: "Adam", surname: "Małysz" });
+    const htmlDoc = template({ name: "Adam", surname: "Małysz", age: 18 });
     console.log(htmlDoc);
     expect(htmlDoc).toBeTruthy();
 
